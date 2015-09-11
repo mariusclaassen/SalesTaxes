@@ -1,5 +1,3 @@
-import java.util.IllegalFormatCodePointException;
-import java.util.IllegalFormatConversionException;
 
 /**
  * @author Marius Claassen
@@ -7,7 +5,7 @@ import java.util.IllegalFormatConversionException;
  */
 public class SalesTaxes {
 
-    public static void main(String[] args) throws IllegalFormatConversionException {
+    public static void main(String[] args) {
         SalesTaxes salesTaxes = new SalesTaxes();
         salesTaxes.runApplication();
     }
@@ -42,6 +40,6 @@ public class SalesTaxes {
         System.out.println("1 packet of headache pills: " + 9.75);
         System.out.println("1 box of imported chocolates: " + 11.25);
         System.out.printf("Sales Taxes: %.2f\n", ((15 * 27.99 / 100) + ( 10 * 18.99 / 100) + (5 * 11.25 / 100)));
-        System.out.printf("Total: %.2f\n", ((27.99 * 1.15) + (18.99 * 1.1) + 9.75 + (11.25 * 1.05)));
+        System.out.printf("Total: %.2f\n", ((27.* 1.15) + (18.99 * 1.1) + 9.75 + (11.25 * 1.05)));
     }
 }
